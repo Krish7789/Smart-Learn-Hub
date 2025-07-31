@@ -1,0 +1,6 @@
+[2025-08-01 01:30:56,544] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 1
+[2025-08-01 01:30:56,546] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 12
+[2025-08-01 01:30:56,547] 28 dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 13
+[2025-08-01 01:30:56,548] 143 langchain_community.llms.huggingface_endpoint - WARNING - WARNING! token is not default parameter.
+                    token was transferred to model_kwargs.
+                    Please make sure that token is what you intended.
