@@ -40,9 +40,9 @@ import os
 from langchain_community.llms import HuggingFaceEndpoint
 
 load_dotenv(dotenv_path="D:/SmartLearnHub/.env")
-print("DEBUG: HUGGINGFACEHUB_API_TOKEN =", token = "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")
+print("DEBUG: HUGGINGFACEHUB_API_TOKEN =", "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")
 
-if token is None:
+if "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" is None:
     raise ValueError("HUGGINGFACEHUB_API_TOKEN not found in environment or .env file")
 huggingface_token = "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"
 if huggingface_token is None:
