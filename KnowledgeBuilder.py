@@ -487,7 +487,7 @@ if selected == "Road Map":
             You are a highly skilled AI trained to Make a Proper Roda Map personalised road map for college students  . You are a professional and your Road Map should be constructive and helpful.
             """
             instructions = f"""
-            student Name : Ritik
+            student Name : Krish
             like the student {text_know} and  it is his end goal to achive after foolwing you road map is {End_Gole}  and the student is a {year}  and his learning spped is {learning_speed} and he want to achive the gola at this levl{difficulty} and this all must be completed in the duration {result}
             Your job is to proved a Proper Road Map and personalised :
             
