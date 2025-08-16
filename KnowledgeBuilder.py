@@ -48,7 +48,6 @@ huggingface_token = "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"
 if huggingface_token is None:
     raise ValueError("HUGGINGFACEHUB_API_TOKEN not found in environment or .env file")
 
-"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" = huggingface_token
 repo_id="mistralai/Mistral-7B-Instruct-v0.2"
 llm=HuggingFaceEndpoint(repo_id=repo_id,temperature=0.7,token="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")
 api_key='AIzaSyAWDUMXlv5JWhQOqDuBHBu01WijtD0igBE'
