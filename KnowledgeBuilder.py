@@ -40,17 +40,17 @@ import os
 from langchain_community.llms import HuggingFaceEndpoint
 
 load_dotenv(dotenv_path="D:/SmartLearnHub/.env")
-print("DEBUG: HUGGINGFACEHUB_API_TOKEN =", os.getenv("HUGGINGFACEHUB_API_TOKEN"))
+print("DEBUG: HUGGINGFACEHUB_API_TOKEN =", token = "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")
 
-if os.getenv("HUGGINGFACEHUB_API_TOKEN") is None:
+if token is None:
     raise ValueError("HUGGINGFACEHUB_API_TOKEN not found in environment or .env file")
-huggingface_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+huggingface_token = "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"
 if huggingface_token is None:
     raise ValueError("HUGGINGFACEHUB_API_TOKEN not found in environment or .env file")
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = huggingface_token
+"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" = huggingface_token
 repo_id="mistralai/Mistral-7B-Instruct-v0.2"
-llm=HuggingFaceEndpoint(repo_id=repo_id,temperature=0.7,token=os.getenv("HUGGINGFACEHUB_API_TOKEN"))
+llm=HuggingFaceEndpoint(repo_id=repo_id,temperature=0.7,token="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")
 api_key='AIzaSyAWDUMXlv5JWhQOqDuBHBu01WijtD0igBE'
 genai.configure(api_key=api_key)
 
