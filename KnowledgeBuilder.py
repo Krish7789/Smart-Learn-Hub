@@ -50,7 +50,7 @@ if huggingface_token is None:
 
 repo_id="mistralai/Mistral-7B-Instruct-v0.2"
 llm=HuggingFaceEndpoint(repo_id=repo_id,temperature=0.7,token="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")
-api_key='AIzaSyAWDUMXlv5JWhQOqDuBHBu01WijtD0igBE'
+api_key='AIzaSyCXo5luZsJ4_QThP0rKwiS3OE6dZCaJvfg'
 genai.configure(api_key=api_key)
 
 t= ["Python", "Java", "C++", "JavaScript", "Ruby", "PHP", "Swift", "Kotlin", 
