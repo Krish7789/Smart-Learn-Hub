@@ -256,7 +256,7 @@ if selected == "Dashboard":
                 image_html = f'<a href="{link}" target="_blank"></a>'
                 st.markdown(image_html, unsafe_allow_html=True)
             with cols[1]:
-                z=user_info['Name']
+                z=user_info['Name','Unknown']
                 ui.metric_card(title="Name", content=z, description="", key="card1")
             with cols[2]:
                 ui.metric_card(title="Top Percentage", content=contest_info['topPercentage'], description="", key="card2")
