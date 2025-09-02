@@ -1,109 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 
-/* Global font */
 * {
     font-family: 'Readex Pro', sans-serif;
 }
 
-/* App background with soft gradient */
+/* ====== APP BACKGROUND ====== */
 .stApp {
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-    background-attachment: fixed;
+    background: #f8f9fb; /* clean, neutral background */
     color: #2c2c2c;
 }
 
-/* Sidebar styling */
-.css-1d391kg, .stSidebar {
-    background: linear-gradient(180deg, #2b2d42, #1a1c2c);
-    padding: 20px;
-    border-radius: 15px;
+/* ====== SIDEBAR ====== */
+.stSidebar {
+    background: rgba(25, 28, 38, 0.95);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.stSidebar h1, .stSidebar h2, .stSidebar h3 {
-    color: #ffffff !important;
-    font-weight: 600;
-}
-
-/* Sidebar buttons / nav items */
-.css-1d391kg .css-1q8dd3e {
-    background: transparent;
+.stSidebar h1, .stSidebar h2, .stSidebar h3, .stSidebar p {
     color: #fff !important;
-    font-weight: 500;
 }
 
-/* Headings */
+.stSidebar .css-1v3fvcr { /* sidebar links */
+    color: #e0e0e0 !important;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.stSidebar .css-1v3fvcr:hover {
+    color: #4dabf7 !important;
+}
+
+/* ====== HEADINGS ====== */
 h1, h2, h3 {
     font-weight: 700;
-    background: linear-gradient(90deg, #ff512f, #dd2476);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #1a1a1a;
 }
 
-/* Cards (like your form containers) */
-.stContainer, .stMarkdown div {
-    background: rgba(255,255,255,0.6);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
+/* ====== CARD STYLING ====== */
+.stContainer, .stMarkdown div, .block-container {
+    background: #fff;
+    border-radius: 14px;
     padding: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
 }
 
-/* Buttons */
+/* ====== BUTTONS ====== */
 .stButton button {
-    background: linear-gradient(90deg, #ff512f, #dd2476);
+    background: linear-gradient(90deg, #4dabf7, #228be6);
     color: #fff;
     border: none;
-    border-radius: 12px;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 22px;
+    font-size: 15px;
     font-weight: 600;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .stButton button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 81, 47, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(34, 139, 230, 0.4);
 }
 
-/* Selectboxes & Input fields */
+/* ====== INPUTS & SELECTS ====== */
 .stSelectbox div, .stTextInput input, .stDateInput input {
-    background: rgba(255,255,255,0.8);
-    border-radius: 12px;
-    padding: 8px;
+    background: #fff;
+    border-radius: 10px;
     border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
     color: #333;
 }
 
 .stSelectbox div:hover, .stTextInput input:focus, .stDateInput input:focus {
-    border: 1px solid #ff512f;
-    box-shadow: 0 0 6px rgba(255,81,47,0.4);
+    border: 1px solid #4dabf7;
+    box-shadow: 0 0 4px rgba(77,171,247,0.5);
 }
 
-/* Radio buttons */
-.stRadio > label {
+/* ====== RADIO & CHECKBOX ====== */
+.stRadio div[role='radiogroup'] label, .stCheckbox label {
+    background: #f1f3f5;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin: 4px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.stRadio div[role='radiogroup'] label:hover, .stCheckbox label:hover {
+    background: #e7f5ff;
+    color: #228be6;
     font-weight: 600;
 }
-.stRadio div[role='radiogroup'] label {
-    background: rgba(255, 255, 255, 0.6);
-    padding: 8px 14px;
-    border-radius: 8px;
-    margin: 5px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-.stRadio div[role='radiogroup'] label:hover {
-    background: rgba(255, 81, 47, 0.2);
-    color: #ff512f;
-    font-weight: 700;
-}
 
-/* Remove bullets from lists */
-ul { list-style-type: none; }
-
-/* HR lines */
+/* ====== HR LINES ====== */
 hr {
     border: none;
-    height: 2px;
-    background: linear-gradient(to right, #ff512f, #dd2476);
+    height: 1px;
+    background: #ddd;
     margin: 20px 0;
 }
