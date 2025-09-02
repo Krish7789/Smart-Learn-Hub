@@ -4,99 +4,94 @@
     font-family: 'Readex Pro', sans-serif;
 }
 
-/* ====== APP BACKGROUND ====== */
+/* ===== APP BACKGROUND ===== */
 .stApp {
-    background: #f8f9fb; /* clean, neutral background */
-    color: #2c2c2c;
+    background: #f7f9fc !important;
+    color: #222 !important;
 }
 
-/* ====== SIDEBAR ====== */
-.stSidebar {
-    background: rgba(25, 28, 38, 0.95);
-    backdrop-filter: blur(10px);
+/* ===== SIDEBAR ===== */
+section[data-testid="stSidebar"] {
+    background: #1f2937 !important; /* dark slate */
+    color: #fff !important;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-.stSidebar h1, .stSidebar h2, .stSidebar h3, .stSidebar p {
+section[data-testid="stSidebar"] h1, 
+section[data-testid="stSidebar"] h2, 
+section[data-testid="stSidebar"] h3, 
+section[data-testid="stSidebar"] p {
     color: #fff !important;
 }
 
-.stSidebar .css-1v3fvcr { /* sidebar links */
-    color: #e0e0e0 !important;
+/* Sidebar navigation items */
+section[data-testid="stSidebar"] a {
+    color: #d1d5db !important;
     font-weight: 500;
+    text-decoration: none;
     transition: color 0.2s;
 }
-.stSidebar .css-1v3fvcr:hover {
-    color: #4dabf7 !important;
+section[data-testid="stSidebar"] a:hover {
+    color: #60a5fa !important; /* blue-400 */
 }
 
-/* ====== HEADINGS ====== */
+/* ===== HEADINGS ===== */
 h1, h2, h3 {
     font-weight: 700;
-    color: #1a1a1a;
+    color: #111 !important;
 }
 
-/* ====== CARD STYLING ====== */
-.stContainer, .stMarkdown div, .block-container {
-    background: #fff;
-    border-radius: 14px;
+/* ===== CARDS & CONTAINERS ===== */
+.block-container {
+    background: #fff !important;
+    border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    margin-bottom: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
-/* ====== BUTTONS ====== */
+/* ===== BUTTONS ===== */
 .stButton button {
-    background: linear-gradient(90deg, #4dabf7, #228be6);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 22px;
-    font-size: 15px;
-    font-weight: 600;
+    background: #2563eb !important; /* blue-600 */
+    color: #fff !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 10px 18px !important;
+    font-weight: 600 !important;
     transition: all 0.2s ease-in-out;
 }
-
 .stButton button:hover {
+    background: #1e40af !important; /* darker blue */
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(34, 139, 230, 0.4);
 }
 
-/* ====== INPUTS & SELECTS ====== */
-.stSelectbox div, .stTextInput input, .stDateInput input {
-    background: #fff;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    padding: 8px;
-    font-size: 14px;
-    color: #333;
+/* ===== INPUT FIELDS ===== */
+.stSelectbox, .stTextInput, .stDateInput {
+    background: #fff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 8px !important;
+}
+.stSelectbox:hover, .stTextInput:hover, .stDateInput:hover {
+    border: 1px solid #60a5fa !important;
 }
 
-.stSelectbox div:hover, .stTextInput input:focus, .stDateInput input:focus {
-    border: 1px solid #4dabf7;
-    box-shadow: 0 0 4px rgba(77,171,247,0.5);
-}
-
-/* ====== RADIO & CHECKBOX ====== */
-.stRadio div[role='radiogroup'] label, .stCheckbox label {
-    background: #f1f3f5;
-    border-radius: 8px;
+/* ===== RADIO & CHECKBOX ===== */
+.stRadio label, .stCheckbox label {
+    background: #f3f4f6 !important;
+    border-radius: 6px;
     padding: 6px 12px;
-    margin: 4px;
-    transition: all 0.2s;
+    margin: 4px 0;
     cursor: pointer;
+    transition: all 0.2s;
 }
-
-.stRadio div[role='radiogroup'] label:hover, .stCheckbox label:hover {
-    background: #e7f5ff;
-    color: #228be6;
+.stRadio label:hover, .stCheckbox label:hover {
+    background: #e0f2fe !important;
+    color: #2563eb !important;
     font-weight: 600;
 }
 
-/* ====== HR LINES ====== */
+/* ===== DIVIDERS ===== */
 hr {
     border: none;
     height: 1px;
-    background: #ddd;
+    background: #e5e7eb !important;
     margin: 20px 0;
 }
