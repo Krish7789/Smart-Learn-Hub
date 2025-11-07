@@ -65,11 +65,11 @@ def get_leetcode_data(username):
 
     return data['data']
 def get_gemini_response1(input,pdf_cotent,prompt):
-    model=genai.GenerativeModel('gemini-1.5-flash')
+    model=genai.GenerativeModel('gemini-2.5-flash')
     response=model.generate_content([input,pdf_content[0],prompt])
     return response.text
 def get_gemini_response(question):
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content(question)
     return response.text
 def load_lottieurl(url: str):
